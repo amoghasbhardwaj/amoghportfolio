@@ -1,19 +1,23 @@
 'use client';
 
-import React, { useState, useId } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { AnimatedWord } from './word';
-import { letterAnimation, letterAnimationTwo } from './anim';
+import { AnimatedWord } from './word'; // Assuming this is a custom component for animated text
+import { letterAnimation, letterAnimationTwo } from './anim'; // Animation definitions
 import Link from 'next/link';
 import type { LinkProps } from 'next/link';
 
 type AnimatedLinkProps = Omit<LinkProps, 'children'> & {
   children: React.ReactNode;
+  className?: string; // Allow className
+  target?: string; // Allow target
 };
 
 export default function AnimatedLink({
   href,
   children,
+  className, // Destructure className
+  target, // Destructure target
   ...props
 }: AnimatedLinkProps) {
   const [isHovered, setIsHovered] = useState(false);
@@ -58,7 +62,7 @@ export default function AnimatedLink({
   };
 
   return (
-    <Link href={href} {...props}>
+    <Link href={href} className={className} target={target} {...props}>
       {processChildren(children)}
     </Link>
   );
