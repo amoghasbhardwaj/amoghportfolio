@@ -5,11 +5,12 @@ import {
   SiGoogle,
   SiLeetcode,
   SiHackerrank,
-  SiGeeksforgeeks
+  SiGeeksforgeeks,
+  SiKaggle
 } from '@icons-pack/react-simple-icons';
 
 const contact: Contact = {
-  email: 'john@example.com',
+  email: 'amoghsai1665@gmail.com',
   socials: [
     {
       name: 'Github',
@@ -40,6 +41,11 @@ const contact: Contact = {
       name: 'Linkedin',
       href: 'https://linkedin.com/',
       Icon: SiLinkedin
+    },
+    {
+      name: 'Kaggle',
+      href: 'https://www.kaggle.com/amoghsbharadwaj',
+      Icon: SiKaggle
     }
   ]
 };
