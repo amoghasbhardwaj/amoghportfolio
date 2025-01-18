@@ -39,7 +39,7 @@ const contact: Contact = {
     },
     {
       name: 'Linkedin',
-      href: 'www.linkedin.com/in/amoghsbharadwaj',
+      href: 'https://www.linkedin.com/in/amoghsbharadwaj',
       Icon: SiLinkedin
     },
     {
