@@ -14,7 +14,7 @@ const contact: Contact = {
   socials: [
     {
       name: 'Github',
-      href: 'https://github.com/',
+      href: 'https://github.com/amoghasbhardwaj',
       Icon: SiGithub
     },
     {
@@ -39,7 +39,7 @@ const contact: Contact = {
     },
     {
       name: 'Linkedin',
-      href: 'https://linkedin.com/',
+      href: 'www.linkedin.com/in/amoghsbharadwaj',
       Icon: SiLinkedin
     },
     {
